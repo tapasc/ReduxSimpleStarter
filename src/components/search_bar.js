@@ -4,6 +4,7 @@ class SearchBar extends Component{
 
     constructor(props){
         super(props);
+        this.onInputChange = this.onInputChange.bind(this);
         this.state = {
             terms:''
         }
@@ -12,17 +13,17 @@ class SearchBar extends Component{
     render(){
         return (
             <div>
-                <input onChange={evt => this.setState({terms:evt.target.value})}/>
+                <input onChange={this.onInputChange}/>
                 <div>{this.state.terms}</div>
             </div>
             
         )
     }
-    // onInputChange(evt){
-    //     //this.setState({terms:evt.target.value});
+    onInputChange(evt){
+        this.setState({terms:evt.target.value});
         
-    //     console.log(this);
-    // }
+        console.log(this);
+    }
 }
 
 export default SearchBar;
