@@ -1,7 +1,21 @@
-import React from 'react';
+import React,{Component} from 'react';
+import ReactDOM from 'react-dom'
+import SearchBar from "./components/search_bar"
 
-const App = function(){
-    return <div>Hello!</div>
+class App extends Component {
+
+    constructor (props){
+        super(props);
+    }
+
+    render(){
+        return (
+            <div>
+                <div>Hi There...</div>
+                <SearchBar/>
+            </div>
+        )        
+    }
 }
 
-React.render(App)
+ReactDOM.render(<App/>,document.querySelector(".container"))
