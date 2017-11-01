@@ -1,0 +1,22 @@
+.PlayButton{
+    border:1px solid red;
+    width:20%;
+    background:red;
+    color:white;
+    border-radius:4px;
+    text-align:center;
+    cursor:pointer;
+}
+.search-bar{
+    margin:20px;
+    
+}
+.search-bar input{
+    width:65%;
+    border-radius: 5px;
+   
+}
+.search-bar input::-webkit-input-placeholder{
+    color: pink;
+    content: 'Search';
+}
